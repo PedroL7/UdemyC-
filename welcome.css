@@ -1,0 +1,66 @@
+body {
+   text-align:left;
+   background-image:url('exotic.jpg'); 
+   background-size: cover;"
+   }
+.links{
+    background-color: rgba(165, 224, 255, 0);
+    color:rgb(143,227,247);
+    padding: 14px 25px;
+    border-radius:15px;
+    text-decoration: none;
+    display: inline-block;
+    margin:5px;
+} 
+
+.links:hover, .links:active {
+                background-color:rgb(255, 144, 63);
+}
+#title{
+    background-color: rgba(195, 253, 206, 0.42);
+    width: 70%;
+    height:15%;
+    border-radius:15px;
+    padding: 15px;
+    margin: 10px;
+}
+#body{
+    background-color:rgba(195, 253, 206, 0.42);
+    width: 900px;
+    height: 900px;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+}
+h1 {
+    font-size:40px;
+    color:rgb(255, 161, 93);
+    font-family:Lucida Sans Unicode, Lucida Grande, sans-serif;
+}
+h2{
+    color:rgb(255, 216, 127);
+    font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+    font-size:30px;
+}
+p{
+    font-size:25px;
+    color:rgb(255,255,255);
+    font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+}
+#Edd{
+    color: rgb(0, 0, 0);
+    border-radius:50%;
+}
+a{
+    font-size:30px;
+    font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+    font-weight:bold;
+    background-color: rgba(165, 224, 255, 0);
+    color:rgb(255, 252, 252);
+    border-radius:15px;
+    text-decoration: none;
+    display: inline-block;
+}
+a:hover, a:active {
+    background-color: rgb(255, 144, 63);
+}

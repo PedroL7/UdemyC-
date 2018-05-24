@@ -1,0 +1,71 @@
+body{
+                    background-image:url(girl.jpg);
+                    background-size:cover;
+                    font-family:Lucida Sans Unicode, Lucida Grande, sans-serif;
+                }
+
+                .links{
+                    font-size:25px;
+                    font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+                    font-weight:bold;
+                    background-color: rgba(165, 224, 255, 0);
+                    color:rgb(143,227,247);
+                    border-radius:15px;
+                    text-decoration: none;
+                    display: inline-block;
+                    padding: 14px 25px;
+                }
+                
+                .links:hover, .links:active {
+                background-color:rgb(255, 144, 63);
+                }
+                
+                #title{
+                background-color: rgba(117, 118, 116, 0.5);
+                width: 55%;
+                height:100px;
+                border-radius: 20px;
+                padding: 15px;
+                margin: 10px;
+                }
+                
+                #form{
+                    background-color: rgba(255, 255, 255, 0.15);
+                    width: 35%;
+                    height: 70%;
+                    border-radius: 20px;
+                    padding: 15px;
+                    margin: 10px
+                }
+                
+                h1{
+                   font-size:40px;
+                   color:rgb(255, 255, 111);
+                }
+
+                form{
+                    color:rgb(239, 239, 239);
+                    font-size:20px;
+                    text-align:center;
+                }
+
+                #airport{
+                    width: 210px;
+                }
+
+                #information{
+                    width:500px;
+                    height:300px;
+                    color:#939b9a;
+                }
+
+                h3{
+                    color:rgb(255, 234, 145);
+                }
+
+                p{
+                    font-weight: bold;
+                    font-size: 15px;
+                    color:rgb(255, 247, 37);
+                    font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+                }

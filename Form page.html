@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Application Form</title>
+        <link rel="stylesheet" type="text/css" href="formpage.css">
+        
+        <script>
+            function checkForm()
+            {
+                // variable creation to store the value of input.
+                var fname = document.forms["form"]["firstname"].value;
+                var sname = document.forms["form"]["surname"].value;
+                var tnumber = document.forms["form"]["number"].value;
+                var email = document.forms["form"]["email"].value;
+                // store a regular expression into a variable.
+                var re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+                
+                // variable creation for radio buttons
+                var radio = document.getElementsByName('Package');
+                
+                // variable creation for flight.
+                var flight = document.forms["form"]["flight"].value;
+                
+                if(fname == null  || fname == "")
+                {
+                    window.alert("Please, enter your first name!");
+                    return false;
+                }
+                
+                if(sname == null || sname == "")
+                {
+                    window.alert("Please, enter your surname!");
+                    return false;
+                }
+                
+                if(tnumber == null || tnumber == "" || isNaN(tnumber))
+                {
+                    window.alert("Enter a valid telephone number!");
+                    return false;
+                }
+                
+                if(email == null || email == "" || !re.test(email))
+                {
+                    window.alert("Please, enter a valid email adress!");
+                    return false;
+                }
+                
+                // Check whether the checkboxes are ticked or not.
+                if((form.perks[0].checked == false) && (form.perks[1].checked == false) &&  (form.perks[2].checked == false))
+                    {
+                        window.alert("Please, choose at least one of the perks you would like to include!");
+                        return false;
+                    }
+                
+                if((radio[0].checked == false) && (radio[1].checked == false) && (radio[2].checked == false))
+                    {
+                        window.alert("Please, tick one of the package boxes!");
+                        return false;
+                    }
+               
+                                
+                if(flight == null || flight == "")
+                    {
+                        window.alert("Please, enter the flight details!")
+                        return false;
+                    }
+                return true;
+            } 
+
+            
+
+        </script>
+    </head>
+        <body>
+            <a class="links" href="Welcome.html"> Welcome</a>
+            <a class="links" href ="Holiday%20Packages.html"> Holiday packages</a>
+            <a class="links" href ="About%20us.html"> About Us</a>
+            
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+             
+             <div align="center">
+               <div id="title"><h1 align="center">Application form</h1></div>
+               
+               <br>
+                <!-- Creating form -->
+                <form id="form" method="post" action="thankyou.html" onsubmit="return checkForm()">
+                      <div align="center">
+                           <div>
+                               <h3>Personal details</h3>
+                               First name:<br>
+                               <input type="text" name="firstname"><br>
+                               Surname:<br>
+                               <input type="text" name="surname"><br>
+                               Telephone number:<br>
+                               <input type="text" name="number"><br>
+                               Email adress:<br>
+                               <input type="text" name="email"><br>
+                               
+                               <h3>Number of people (adults only & max. of 10) </h3>
+                               <select>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                               </select>
+                            
+                               <h3>What perks will you need? (Additional charges will be included)</h3>
+                                Car<input type="checkbox" name="perks" value="Car"><br>   
+                                Mobile data<input type="checkbox" name="perks" value="Wi-fi"><br>
+                                Newspaper<input type="checkbox" name="perks" value="Newspaper"><br>
+        
+                            
+                               <h3>Package type</h3>
+                                Flight Only<input type="radio" name="Package" value="Flight Only"><br>
+                                Flight & Hotel<input type="radio" name="Package" value="Flight & Hotel"><br>
+                                Hotel Only<input type="radio" name="Package" value="Hotel"><br>
+                            
+                            <br>
+                            <br>
+                    
+                            <h3>Flights and dates</h3>
+                               Flight from:<br>
+                               <input type="text" name="flight"><br>
+                               <!-- Creation of text box with default value and unable to be edited -->
+                               Flight to:<br>
+                               <input name="flight to" id="airport" value="   Sao Paulo, International Airport" disabled><br>
+                               Departing date:<br>
+                               <input type="date" name="departing date"><br>
+                               *Returning date:<br>
+                               <input type="date" name="returning date"><br>
+                    
+                            <h3>Further information:</h3>
+                               <!-- Creation of text box and added css styling -->
+                               <textarea id="information" name="further information" placeholder="Let us know what else could be included in the trip!"></textarea><br>
+                               <input type="submit" value="Submit Application">
+                               <input type="reset" value="Reset Application form">
+                        
+                            <br>
+                            <br>
+                            
+                       </div>
+                    </div>
+                </form>
+            <p>*Note that training period and actual journey corresponds to a period of never less than 5 months.</p>
+        </div>
+    </body>
+</html>
