@@ -1,2 +1,2 @@
 # UdemyC++
-A bunch of simple exercises using C++ while learning C++ on Udemy.
+A bunch of simple exercises using C++ while learning it on Udemy.
